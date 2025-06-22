@@ -1,6 +1,4 @@
-
 const CHAVE_ARMAZENAMENTO = 'filmes';
-
 
 function obterFilmes() {
   return JSON.parse(localStorage.getItem(CHAVE_ARMAZENAMENTO) || '[]');
