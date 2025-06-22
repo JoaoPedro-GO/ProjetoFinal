@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>FATEFLIX</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>FATEFLIX</h1>
+    <div class="actions">
+        <input type="search" id="searchInput" placeholder="Pesquisar título...">
+        <a href="form.html" class="btn">Adicionar Filme</a>
+    </div>
+  </header>
+  <main>
+    <section id="moviesGrid" class="grid"></section>
+  </main>
+  <script src="app.js"></script>
+  <script>
+     document.addEventListener('DOMContentLoaded', () => {
+        renderizarGradeFilmes();
+        document.getElementById('searchInput').addEventListener('input', (e)=>{
+            renderizarGradeFilmes(e.target.value);
+        });
+     });
+  </script>
+</body>
+</html>

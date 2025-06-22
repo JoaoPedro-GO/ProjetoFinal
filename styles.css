@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+*{
+  box-sizing:border-box;
+}
+
+body{
+  margin:0;
+  font-family: 'Roboto', sans-serif;
+  background-color:#141414;
+  color:#fff;
+}
+
+a{
+  color:#e50914;
+  text-decoration:none;
+}
+
+header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:10px 20px;
+  background-color:#000;
+}
+
+header h1{
+  margin:0;
+  color:#e50914;
+  font-size:24px;
+}
+
+.actions{
+  display:flex;
+  gap:10px;
+}
+
+.btn{
+  background-color:#e50914;
+  color:#fff;
+  padding:8px 12px;
+  text-decoration:none;
+  border:none;
+  border-radius:4px;
+  cursor:pointer;
+  font-weight:700;
+}
+
+input[type="search"]{
+  padding:6px 10px;
+  border-radius:4px;
+  border:none;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(180px,1fr));
+  gap:20px;
+  padding:20px;
+}
+
+.card{
+  background-color:#222;
+  border-radius:6px;
+  overflow:hidden;
+  position:relative;
+  transition:transform .2s;
+}
+
+.card:hover{
+  transform:scale(1.05);
+}
+
+.card img{
+  width:100%;
+  height:270px;
+  object-fit:cover;
+}
+
+.card .info{
+  padding:10px;
+}
+
+.card .info h3{
+  margin:0;
+  font-size:16px;
+}
+
+.card .info .actions{
+  margin-top:8px;
+  display:flex;
+  gap:6px;
+}
+
+.card button{
+  flex:1;
+  padding:4px 0;
+  background-color:#e50914;
+  border:none;
+  color:#fff;
+  border-radius:4px;
+  cursor:pointer;
+  font-size:12px;
+}
+
+.formContainer{
+  max-width:600px;
+  margin:20px auto;
+  background-color:#222;
+  padding:20px;
+  border-radius:6px;
+}
+
+.formContainer label{
+  display:block;
+  margin-bottom:10px;
+  font-size:14px;
+}
+
+.formContainer input,
+.formContainer textarea{
+  width:100%;
+  padding:8px;
+  border:none;
+  border-radius:4px;
+  margin-top:4px;
+}
+
+.details{
+  max-width:800px;
+  margin:20px auto;
+  background-color:#222;
+  padding:20px;
+  border-radius:6px;
+}
+
+.details h2{
+  margin-top:0;
+  color:#e50914;
+}
+
+.nota {
+  display: block;
+  font-size: 0.8em;
+  color: #ccc;
+  margin-bottom: 4px;
+}
